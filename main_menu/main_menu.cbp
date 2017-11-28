@@ -34,9 +34,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/salesperson.h" />
+		<Unit filename="include/manager.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/salesperson.cpp" />
+		<Unit filename="src/manager.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -4,13 +4,17 @@
 
 class manager
 {
-    public:
-        manager();
-        virtual ~manager();
-
-
 
     private:
+
+
+    public:
+        manager();
+
+
+
+
+
 };
 
 #endif // MANAGER_H
