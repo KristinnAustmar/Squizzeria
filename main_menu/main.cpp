@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    char manager, baker, salesperson, distributer;
+char get_position(){
+// Create user variables for the menu
+    char manager, baker, salesperson, distri, position;
     manager = 'm';
     baker = 'b';
     salesperson = 's';
-    distributer = 'd';
-
+    distri = 'd';
+    // Format:
     cout << "||========================================|| " << endl;
     cout << "||                 WELCOME                || " << endl;
     cout << "||                                        || " << endl;
@@ -26,8 +26,39 @@ int main()
     cout << "||========================================|| " << endl;
     cout << "||                                        || " << endl;
     cout << "||        PLEASE STATE YOUR PURPOSE       || " << endl;
+    cout << endl;
+    // Here the user is asked for the user purpose/staff position
+    while(true){
+         cin >> position;
+    if(position == 'm' || position == 'M'){
+        cout << "||========================================|| " << endl;
+        cout << "||              WELCOME MANAGER           || " << endl;
+        cout << "||========================================|| " << endl;
+    }
+    else if(position == 'b' || position == 'B'){
+        cout << "||========================================|| " << endl;
+        cout << "||              WELCOME BAKER             || " << endl;
+        cout << "||========================================|| " << endl;
+    }
+    else if(position == 's' || position == 'S'){
+        cout << "||========================================|| " << endl;
+        cout << "||              WELCOME SALESPERSON       || " << endl;
+        cout << "||========================================|| " << endl;
+    }
+    else if(position == 'd' || position == 'D'){
+        cout << "||========================================|| " << endl;
+        cout << "||              WELCOME DISTRIBUTION      || " << endl;
+        cout << "||========================================|| " << endl;
+    }
+    else {
+        cout << "EHHHHH WRONG!! GET A LIFE LOSER!";
+    }
 
-    cin >>
+  return position;  }
+}
+int main(){
+   char position = get_position();
+
 
     return 0;
 }
